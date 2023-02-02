@@ -17,6 +17,10 @@
 			.reveal section {
 			  text-align: left;
 			}
+			.img-style {
+				border-radius: 5px;
+    			box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 9%);
+			}
 		</style>
 	</head>
 	<body>
@@ -26,7 +30,7 @@
 				<section>
 					<h2>The Accessibility First WordPress Development Methodology</h2>
 					<p>- Steve Jones</p>
-					<img style="margin-bottom:0px;" data-src="https://equalizedigital.com/wp-content/uploads/2022/11/Equalize-Digital-color-logo.svg" width="400" alt="Equalize Digital">
+					<img style="margin-bottom:0px;" data-src="images/equalize-digital-logo.svg" width="400" alt="Equalize Digital">
 					<p style="margin-top:0px;"><small><a href="https://equalizedigital.com">EqualizeDigital.com</a> | <a href="https://twitter.com/EqualizeDigital">@EqualizeDigital</a></small></p>
 					<aside class="notes">
 						<p>Hi I'm Steve Jones. I'm the CTO of Equalize Digital we're a certified B-Corporation and a WordPress VIP agency that specializes in accessibility.</p>
@@ -40,7 +44,7 @@
 					</aside>
 				</section>
 				<section>
-					<h2>Prerequisite: Website Accessibility</h2>
+					<h2>Prerequisite: <br />Website Accessibility</h2>
 					<p>An accessible website is usable by as many people as possible, regardless of their ability or circumstances.</p>
 					<aside class="notes">
 						<p>I'm sure most of you are familiar at some level with website accessibility since you've turned up for an accessibility talk. But I want to start with a simple definition of accessibility so we're on the same page.</p>
@@ -152,45 +156,92 @@
 					</aside>
 				</section>
 				<section>
-					<h2>Automated Testing</h2>
-					<ul>
-						<li><a href="https://wordpress.org/plugins/accessibility-checker/">Accessibility Checker</a> (Free WordPress Plugin)</li>
-						<li><a href="https://monsido.com/">Monsido</a></li>
-						<li><a href="https://pope.tech/" >Pope Tech</a> (WAVE API)</li>
-						<li><a href="https://www.siteimprove.com/">Siteimprove</a></li>
-					</ul>
-					
-					<aside class="notes">
-						Automated testing can quickly identify accessibility issues and provide full site reports saving time and cost.
+					<section>
+						<h2>Automated Testing</h2>
+						<aside class="notes">
+							Automated testing can quickly identify accessibility issues and provide full site reports saving time and cost.
 
-						Automation doesn't equal an accessible website. It just mean that you've made accessible anything that can be automated. Some issues must be tested manually.
-					</aside>
+							Automation doesn't equal an accessible website. It just mean that you've made accessible anything that can be automated. Some issues must be tested manually.
+						</aside>
+					</section>
+					<section>
+						<h3><a href="https://wordpress.org/plugins/accessibility-checker/">Accessibility Checker</a></h3>
+						<small>(Free WordPress Plugin)</small>
+						<div class="r-stack">
+							<img class="img-style" data-src="images/edac-screenshot-01.png" alt="Accessibility Checker WordPress plugin summary screen">
+							<img class="fragment img-style" data-src="images/edac-screenshot-02.png" alt="Accessibility Checker WordPress plugin details screen">
+						</div>
+					</section>
+					<section>
+						<h3>Software as a Service (Saas) Scanning Tools</h3>
+						<ul>
+							<li><a href="https://monsido.com/">Monsido</a></li>
+							<li><a href="https://pope.tech/" >Pope Tech</a> (WAVE API)</li>
+							<li><a href="https://www.siteimprove.com/">Siteimprove</a></li>
+						</ul>
+					</section>
+					<section>
+						<h3>Automated Doesn't Equal Accessible</h3>
+						<aside class="notes">
+							Automation doesn't equal an accessible website. It just mean that you've made accessible anything that can be automated. Some issues must be tested manually.
+						</aside>
+					</section>
 				</section>
 				<section>
-					<h2>Browser Extensions</h2>
-					<ul>
-						<li>WAVE</li>
-						<li>AXE</li>
-						<li>IBM Equal Access Checker</li>
-						<li>HeadingMap</li>
-					</ul>
-					<aside class="notes">
+					<section>
+						<h2>Browser Extensions</h2>
+						<aside class="notes">
 
-					</aside>
+						</aside>
+					</section>
+					<section>
+						<h3>WAVE</h3>
+						<img class="img-style" data-src="images/wave.png" alt="weather.com with wave browser extension overlay">
+						<aside class="notes">
+							The WAVE Chrome, Firefox, and Edge extensions allows you to evaluate web content for accessibility issues directly within your browser. Because the extension runs entirely within your web browser, no information is sent to the WAVE server. This ensures 100% private and secure accessibility reporting. The extension can check intranet, password-protected, dynamically generated, or sensitive web pages. Also, because the WAVE extension evaluates the rendered version of your page, locally displayed styles and dynamically-generated content from scripts or AJAX can be evaluated.
+						</aside>
+					</section>
+					<section>
+						<h3>axe DevTools - Web Accessibility Testing</h3>
+						<img class="img-style" data-src="images/axe.png" alt="weather.com with axe dev tools browser extension">
+						<aside class="notes">
+							Accessibility Checker for Developers, Testers, and Designers in Chrome
+Find and fix more accessibility issues during website development with axe DevTools. 
+
+The free axe DevTools browser extension is a fast, lightweight, yet powerful testing tool driven by the world’s most trusted accessibility testing engine, axe-core, developed by Deque. 
+
+Why use axe DevTools to build accessible websites?
+-To deliver brilliant user experiences for everyone, including the 1 billion people globally living with a disability today.
+-To avoid wasting time chasing fake issues. Only axe prevents false positive results. 
+-To improve accuracy, preventing tickets from resurfacing again and again.
+-To reduce the risk and cost of accessibility lawsuits.
+						</aside>
+					</section>
+					<section>
+						<h3>IBM Equal Access Accessibility Checker</h3>
+						<img class="img-style" data-src="images/ibm.png" alt="weather.com with ibm equal access accessibility checker browser extension">
+						<aside class="notes">
+							The IBM Equal Access Accessibility Checker is an open source tool for web developers and auditors that utilizes IBM's accessibility rule engine, which detects accessibility issues for web pages and web applications. The extension integrates into the browser development tools, providing an integrated checking experience, helping users quickly identify the source of accessibility issues and try fixes.
+						</aside>
+					</section>
+					<section>
+						<h3>HeadingMap</h3>
+						<img class="img-style" data-src="images/headings-map.png" alt="gizmodo.com and yahoo.com with the headings map browser extension">
+						<aside class="notes">
+							To show, browse and audit (for accessibility and SEO) the headings structure
+The extension generates a documentmap or index of any web document structured with headings (you can access directly to the content by clicking on any of its items), and now, it shows the HTML 5 outline.
+						</aside>
+					</section>
 				</section>
 				<section>
 					<h2>Linters</h2>
-					<ul>
-						<li>
-							<a href="https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter">axe Accessibility Linter</a> (Visual Studio Code) 
-							<small>
-								Checks React (.js .jsx .ts .tsx), Vue (.vue), Angular (.component.html), HTML (.html .htm), and Markdown (.md .markdown)
-							</small>
-						</li>
-						<li>PHP currently doesn't have a good up-to-date linter or code sniffer</li>
-					</ul>
+					<img class="img-style" data-src="images/axe-linter.png" alt="button code with axe linter visual studio code plugin code">
+					<a href="https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter">axe Accessibility Linter</a> (Visual Studio Code) 
+					<small>
+						Checks React (.js .jsx .ts .tsx), Vue (.vue), Angular (.component.html), HTML (.html .htm), and Markdown (.md .markdown)
+					</small>
 					<aside class="notes">
-						
+						PHP currently doesn't have a good up-to-date linter or code sniffer
 					</aside>
 				</section>
 				<section>
@@ -199,7 +250,10 @@
 						<li><a href="https://www.deque.com/axe/">Axe</a></li>
 						<li><a href="https://github.com/pa11y/pa11y">pa11y</a></li>
 					</ul>
+					<img class="img-style" data-src="images/github-actions.png" alt="GitHub action errors">
 					<aside class="notes">
+						https://www.adrianbolonio.com/blog/accessibility-github-actions
+
 						Unit tests can be automatically run via GitHub actions on pull requests for WordPress blocks written in React. Actions can run accessibility unit test such as [Axe](https://www.deque.com/axe/) and [pa11y](https://github.com/pa11y/pa11y).
 					</aside>
 				</section>
@@ -261,7 +315,7 @@
 					<a href="Equalizedigital.com/events" aria-label="WordPress Accessibility Meetup">Equalizedigital.com/events</a></p>
 					<p>WordPress Accessibility Facebook Group<br />
 					<a href="https://www.facebook.com/groups/wordpress.accessibility" aria-label="WordPress Accessibility Facebook Group">facebook.com/groups/wordpress.accessibility</a></p>
-					<img style="margin-bottom:0px;" data-src="https://equalizedigital.com/wp-content/uploads/2022/11/Equalize-Digital-color-logo.svg" width="400" alt="Equalize Digital">
+					<img style="margin-bottom:0px;" data-src="images/equalize-digital-logo.svg" width="400" alt="Equalize Digital">
 					<p style="margin-top:0px;"><small><a href="https://equalizedigital.com">EqualizeDigital.com</a> | <a href="https://twitter.com/EqualizeDigital">@EqualizeDigital</a></small></p>
 					<aside class="notes">
 						
