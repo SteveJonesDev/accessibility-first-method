@@ -36,11 +36,12 @@
 						<p>Hi I'm Steve Jones. I'm the CTO of Equalize Digital we're a certified B-Corporation and a WordPress VIP agency that specializes in accessibility.</p>
 
 						<p>Today I'm excited to talk about how to implement an accessibility first approach into your WordPress development projects. This ensures a truly accessible digital experience for all users, specifically those with disabilities. We'll explore the unique responsibility WordPress developers have to take a proactive approach to developing blocks, plugins, and themes. As well as tools and automatons we can integrate into our development workflow.</p>
-
-						<p>Here is what I want to be your main take away from this speech.</p>
-
-						<p>Adopt and prioritize accessibility early, and often throughout your development workflow.</p>
-
+					</aside>
+				</section>
+				<section>
+					<h2>Adopt and prioritize accessibility early, and often throughout your development workflow.</h2>
+					<aside class="notes">
+						<p>Here is what I want to be your main takeaway from this speech.</p>
 					</aside>
 				</section>
 				<section>
@@ -51,7 +52,7 @@
 
 						<p>Accessible website development is the practice of making websites usable by as many people as possible, regardless of their ability or circumstances.</p>
 
-						<p></p>Traditionally people think of this as only those with disabilities. But making websites accessible also benefits those using mobile devices, slow internet connections, or temporary heath issues.</aside>
+						<p></p>Traditionally people think of this as only those with disabilities. But making websites accessible also benefits those using mobile devices, slow internet connections, or those with temporary heath issues.</aside>
 					</aside>
 				</section>
 				<section>
@@ -67,8 +68,8 @@
 						<p>There are many reasons why accessibility is important but I'll briefly cover just a couple.</p>
 						
 						<h3>Legal requirements</h3>
-						
-						<p>Many countries have legal accessibility requirements and penalties if you're found to not be following accessibility requirements. Disclaimer, I am not a lawyer, please consult your lawyer for legal advice. In the United States federal agencies and often those receiving federal grants are required to adhere to <a href="https://www.section508.gov/">Section 508</a> standards. Other businesses in the United States most adhere to the <a href="https://www.ada.gov/">Americans with Disabilities Act</a> (ADA) I've personally been in conversations with people at WordCamps who were sued for violating accessibility requirements. Trust me it's better to do it right the first time then to get tangled up in costly litigation.</p>
+						<p>Disclaimer, I am not a lawyer, please consult your lawyer for legal advice.</p>
+						<p>Many countries have legal accessibility requirements and penalties if you're found to not be following accessibility requirements. In the United States federal agencies and often those receiving federal grants such as colleges are required to adhere to <a href="https://www.section508.gov/">Section 508</a> standards. Other businesses in the United States must adhere to the <a href="https://www.ada.gov/">Americans with Disabilities Act</a> (ADA) I've personally been in conversations with people at WordCamps who were sued for violating accessibility requirements. Trust me it's better to do it right the first time then to get tangled up in costly litigation.</p>
 						
 						<h3>Everyone benefits from accessibility.</h3>
 
@@ -76,8 +77,12 @@
 
 						<p>As much as we'd like to avoid it, we're all aging and will most likely some day benefit from accessibility ourselves either due to age related heath issues such as visual impairment or some more extreme health issues.</p>
 
-						<p>Even though we may not realize it we all need accessibility. By adopting accessibility first development now well ensuring an accessible future.</p>
-
+						<p>Even though we may not realize it we all need accessibility.</p>
+					</aside>
+				</section>
+				<section>
+					<h2>Fully adopting accessibility first development now ensures an accessible future.</h2>
+					<aside class="notes">
 					</aside>
 				</section>
 				<section>
@@ -90,33 +95,42 @@
 					<aside class="notes">
 						<p>Accessibility first development is a shift in the way you approach your thinking about the development process. Choosing to create blocks, plugins, and themes that are as accessible as possible out of the box.</p>
 						<h3>It's necessary</h3>
-						<p>Accessibility first development embarrassed the idea that accessibility is a necessity. It's not added later or worse ignored altogether if the project deadline is approaching. Prioritizing accessibility takes it from being a baseline standard to a core project requirement. Simple put, If it's not accessibility it doesn't work.</p>
+						<p>Accessibility first development embarrassed the idea that accessibility is a necessity. It's not added later or worse ignored altogether if the project deadline is approaching. Prioritizing accessibility takes it from being a baseline standard to a core project requirement.</p>
 						<h3>It's Inclusive</h3>
 						<p>Accessibility first aims to target the users with the most severe disability. This creates a trickle down affect that covers all other users with little to no disabilities.</p>
 						<h3>It's Proactive</h3>
-						<p>Accessibility first development addresses inclusivity at the beginning and through out the development process, not as an afterthought. Addressing accessibility earlier saves time and resources when building blocks, plugins, and websites through a more efficient development workflow.</p>
+						<p>Accessibility first development addresses inclusivity at the beginning and through out the development process, not as an afterthought. Addressing accessibility earlier saves time and resources, through a more efficient development workflow.</p>
+					</aside>
+				</section>
+				<section>
+					<h2>If it's not accessible, it's broken!</h2>
+					<aside class="notes">
+						<p>Simply put, If it's not accessible, it's broken!</p>
+						<p>Developers must adopt the mindset that if what they are coding is not accessible it's broken. It should be fixed and tested before being merged into production.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>The WordPress Developers Accessibility Responsibility</h2>
 					<ul>
-						<li>WordPress powers over 40% of all website on the internet</li>
-						<li>WordPress products are generally content producing</li>
+						<li>WordPress powers over 40% of all websites</li>
+						<li>WordPress products are content producing</li>
 						<li>Ensure blocks, plugins, and themes are fully accessible at launch</li>
 						<li>Retroactive remediation can be daunting and expensive.</li>
 					</ul>
 					<aside class="notes">
 						<p>WordPress developers have a unique responsibility to take a proactive approach to developing blocks, plugins, and themes that are fully accessible at launch. These products are generally content producing or duplicated on multiple websites. With WordPress' massive ~40% market share of websites, remedying accessibility issues retroactively can be a daunting in not impossible task.</p>
-
-						<p>For example if you create and release a block plugin that generate HTML markup in the database that is inaccessible it could be installed on any number of websites and used on any number of pages. Release and update to fix that issues…</p>
+						<p>For example if you create and release a block plugin that generates HTML markup in the database that is inaccessible it could be installed on any number of websites and used on any number of pages. Releasing an update to fix that issues would require all those site to update to the latest version of that plugin. Most likely an update alone wouldn't fix this issue as a find and replace would likely need to be run on the database to fix the inaccessible code.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>A Word of Caution</h2>
 					<p>Be cautious of layered on one click accessibility solutions.</p>
 					<aside class="notes">
-						<p>There are some people out there that claim accessibility can be layered on top of an existing, inaccessible website. This is not true and these people are typically trying to sell you something. There is no replacement for making accessibility part of your development knowledge base from the onset.</p>
+						<p>There are some people out there that claim accessibility can be layered on top of an existing, inaccessible website (overlays). This is not true and these people are typically trying to sell you something.</p>
 					</aside>
+				</section>
+				<section>
+					<h2>There is no replacement for making accessibility part of your development knowledge base from the onset.</h2>
 				</section>
 				<section>
 					<h2>We've Been Here Before - Mobile First Development</h2>
@@ -126,42 +140,50 @@
 						<li>Accessibility first development must become just as common place as mobile first development.</li>
 					</ul>
 					<aside class="notes">
-						<p>Around 2009, we first heard about the Mobile First concept. It was an overwhelming shift in thinking and development workflows. Now it is just part of our daily lives as developers. I actually this it would be more work to make a website that isn't responsive at this point.</p>
+						<p>Around 2009, we first heard about the mobile first concept. It was an overwhelming shift in thinking and development workflows. Now it is just part of our daily lives as developers. I actually think it would be more work to make a website that isn't responsive at this point.</p>
 
-						<p>Today the accessibility first concept may seem just as daunting as Mobile First did years ago. With the right tools and attitude Accessibility can become just as integral to our development workflow as Mobile First.</p>
+						<p>Today the accessibility first concept may seem just as daunting as mobile first did years ago. With the right tools and attitude Accessibility can become just as integral to our development workflow as mobile first.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Learn Accessibility Deeply</h2>
 					<ul>
 						<li>
-							Web Content Accessibility Guidelines (WCAG)
+							Web Content Accessibility Guidelines (WCAG) 
 							<br /><small><a href="https://www.w3.org/WAI/standards-guidelines/wcag" aria-label="Web Content Accessibility Guidelines">https://www.w3.org/WAI/standards-guidelines/wcag</a></small>
 						</li>
 						<li>
-							MDN Web docs (Unofficial)
-							<br /><small><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" aria-label="Web Content Accessibility Guidelines">https://developer.mozilla.org/en-US/docs/Web/Accessibility</a></small>
+							MDN Web docs (Unofficial) 
+							<br /><small><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" aria-label="MDN Accessibility docs">https://developer.mozilla.org/en-US/docs/Web/Accessibility</a></small>
+						</li>
+						<li>
+							Equalize Digital Accessibility Checker Documentation (Unofficial)
+							<br /><a href="https://equalizedigital.com/accessibility-checker/documentation/" aria-label="Equalize Digital Accessibility Checker Documentation">https://equalizedigital.com/accessibility-checker/documentation/</a>
 						</li>
 					</ul>
 					<aside class="notes">
-						<p>The Web Content Accessibility Guidelines (WCAG) explain how to make web content more accessible.</p>
-						<p>I find the MDN Web Docs to be a help place for developers to find details accessible documentation and examples. These are unofficial docs so alway be sure to cross reference these docs with the office WCAG guidelines.</p>
+						<p>Here are a few resources that are helpful when learning accessibility.</p>
+						<h3>WCAG</h3>
+						<p>The Web Content Accessibility Guidelines (WCAG) is the official accessibility documentation. You want to aim for a minimum WCAG 2.1 AA compliance.</p>
+						<h3>MDN</h3>
+						<p>I find the MDN Web Docs to be a help place for developers to find detailed accessible documentation and examples.</p>
+						<h3>Accessibility Checker</h3>
+						<p>I also find myself using our own documentation for the Accessibility Checker plugin (Which I'll touch on later). For each accessible check the plugin performs these is documentation that describes the issue, it's impact on accessibility and how to fix it.</p>
+						<p>These are unofficial docs so alway be sure to cross reference the information found on these docs with the office WCAG guidelines.</p>
 					</aside>
 				</section>
 				<section>
 					<h2>Accessibility First Testing</h2>
 					<p>Test accessibility early and test it often.</p>
 					<aside class="notes">
-						The Accessibility First Mantra
+						<p>The Accessibility First Mantra: Test accessibility early and test it often.</p>
 					</aside>
 				</section>
 				<section>
 					<section>
 						<h2>Automated Testing</h2>
 						<aside class="notes">
-							Automated testing can quickly identify accessibility issues and provide full site reports saving time and cost.
-
-							Automation doesn't equal an accessible website. It just mean that you've made accessible anything that can be automated. Some issues must be tested manually.
+							<p>Automation is crucial to an accessibility first development workflow. It reduces repetitive tasks, and the potential for human error. Testing can quickly identify accessibility issues and provide full site reports, saving time and cost.</p>
 						</aside>
 					</section>
 					<section>
@@ -191,45 +213,43 @@
 					<section>
 						<h2>Browser Extensions</h2>
 						<aside class="notes">
-
+							<ul>
+								<li>Allow you to evaluate web content for accessibility issues directly within your browser.</li>
+								<li>Typically private and secure</li>
+								<li>Evaluates the rendered page</li>
+								<li>Support most Chromium browsers and/or FireFox</li>
+							</ul>
 						</aside>
 					</section>
 					<section>
 						<h3>WAVE</h3>
 						<img class="img-style" data-src="images/wave.png" alt="weather.com with wave browser extension overlay">
 						<aside class="notes">
-							The WAVE Chrome, Firefox, and Edge extensions allows you to evaluate web content for accessibility issues directly within your browser. Because the extension runs entirely within your web browser, no information is sent to the WAVE server. This ensures 100% private and secure accessibility reporting. The extension can check intranet, password-protected, dynamically generated, or sensitive web pages. Also, because the WAVE extension evaluates the rendered version of your page, locally displayed styles and dynamically-generated content from scripts or AJAX can be evaluated.
 						</aside>
 					</section>
 					<section>
 						<h3>axe DevTools - Web Accessibility Testing</h3>
 						<img class="img-style" data-src="images/axe.png" alt="weather.com with axe dev tools browser extension">
 						<aside class="notes">
-							Accessibility Checker for Developers, Testers, and Designers in Chrome
-Find and fix more accessibility issues during website development with axe DevTools. 
-
-The free axe DevTools browser extension is a fast, lightweight, yet powerful testing tool driven by the world’s most trusted accessibility testing engine, axe-core, developed by Deque. 
-
-Why use axe DevTools to build accessible websites?
--To deliver brilliant user experiences for everyone, including the 1 billion people globally living with a disability today.
--To avoid wasting time chasing fake issues. Only axe prevents false positive results. 
--To improve accuracy, preventing tickets from resurfacing again and again.
--To reduce the risk and cost of accessibility lawsuits.
+							<p><a href="https://www.deque.com/axe/devtools/">axe DevTools</a> uses axe-core, developed by Deque.</p>
+							<p>Runs in the Chrome Dev Tools</p>
 						</aside>
 					</section>
 					<section>
 						<h3>IBM Equal Access Accessibility Checker</h3>
 						<img class="img-style" data-src="images/ibm.png" alt="weather.com with ibm equal access accessibility checker browser extension">
 						<aside class="notes">
-							The IBM Equal Access Accessibility Checker is an open source tool for web developers and auditors that utilizes IBM's accessibility rule engine, which detects accessibility issues for web pages and web applications. The extension integrates into the browser development tools, providing an integrated checking experience, helping users quickly identify the source of accessibility issues and try fixes.
+							<p>The IBM Equal Access Accessibility Checker is an open source tool that utilizes IBM's accessibility rule engine.</p>
+							<p>Also runs in the Chrome Dev Tools</p>
 						</aside>
 					</section>
 					<section>
 						<h3>HeadingMap</h3>
 						<img class="img-style" data-src="images/headings-map.png" alt="gizmodo.com and yahoo.com with the headings map browser extension">
 						<aside class="notes">
-							To show, browse and audit (for accessibility and SEO) the headings structure
-The extension generates a documentmap or index of any web document structured with headings (you can access directly to the content by clicking on any of its items), and now, it shows the HTML 5 outline.
+							<p>Generates an index of all the headings on a page.</p>
+							<p>Heading order is good for accessibility and SEO.</p>
+							<p>Clicking on a heading takes you to it's location on the page.</p>
 						</aside>
 					</section>
 				</section>
@@ -241,7 +261,8 @@ The extension generates a documentmap or index of any web document structured wi
 						Checks React (.js .jsx .ts .tsx), Vue (.vue), Angular (.component.html), HTML (.html .htm), and Markdown (.md .markdown)
 					</small>
 					<aside class="notes">
-						PHP currently doesn't have a good up-to-date linter or code sniffer
+						<p>Also uses, Deque axe-core.</p>
+						<p>PHP currently doesn't have a good up-to-date linter or code sniffer</p>
 					</aside>
 				</section>
 				<section>
@@ -252,9 +273,19 @@ The extension generates a documentmap or index of any web document structured wi
 					</ul>
 					<img class="img-style" data-src="images/github-actions.png" alt="GitHub action errors">
 					<aside class="notes">
-						https://www.adrianbolonio.com/blog/accessibility-github-actions
-
-						Unit tests can be automatically run via GitHub actions on pull requests for WordPress blocks written in React. Actions can run accessibility unit test such as [Axe](https://www.deque.com/axe/) and [pa11y](https://github.com/pa11y/pa11y).
+						<p>GitHub actions can be used to automate accessibility tests with libraries like axe, pally, and lighthouse.</p>
+						<p>These actions can be run on pull requests or update as a stop-gap to ensure accessibility is tested before merging code into production. Any errors would need to resolved before being accepted.</p>
+						<ul>
+							<li>
+								axe by Deque: is a command line interface (CLI)
+							</li>
+							<li>
+								Pa11y: a command line interface (CLI) tool that you can use from your terminal
+							</li>
+							<li>
+								Lighthouse: by Google included in the Chrome browser development tools. It can be run from the terminal. It generates reports on accessibility and more.
+							</li>
+						</ul>
 					</aside>
 				</section>
 				<section>
@@ -304,7 +335,9 @@ The extension generates a documentmap or index of any web document structured wi
 				<section>
 					<h2 class="r-fit-text">Accessibility First = People First</h2>
 					<aside class="notes">
-						When we fully adopt the accessibility first development method we're choosing to prioritize people. Accessibility First = People First!
+						<p>We've covered what accessibility is, why it's important, resources and tools to add to our development workflow to help achieve accessible code.</p>
+						<p>Now take this knowledge back to your dev teams to adopt and prioritize accessibility early, and often throughout your development workflow.</p>
+						<p>In conclusion, when we fully adopt the accessibility first development method we're choosing to prioritize people first because <strong>Accessibility First</strong> equals <strong>People First</strong>!</p>
 					</aside>
 				</section>
 				<section>
