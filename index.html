@@ -41,7 +41,7 @@
 				<section>
 					<h2>Adopt and prioritize accessibility early, and often throughout your development workflow.</h2>
 					<aside class="notes">
-						<p>Here is what I want to be your main takeaway from this speech.</p>
+						<p>The goal of this talk is to equip you with the inspiration and information to adopt and prioritize accessibility early, and often throughout your development workflow.</p>
 					</aside>
 				</section>
 				<section>
@@ -69,7 +69,9 @@
 						
 						<h3>Legal requirements</h3>
 						<p>Disclaimer, I am not a lawyer, please consult your lawyer for legal advice.</p>
-						<p>Many countries have legal accessibility requirements and penalties if you're found to not be following accessibility requirements. In the United States federal agencies and often those receiving federal grants such as colleges are required to adhere to <a href="https://www.section508.gov/">Section 508</a> standards. Other businesses in the United States must adhere to the <a href="https://www.ada.gov/">Americans with Disabilities Act</a> (ADA) I've personally been in conversations with people at WordCamps who were sued for violating accessibility requirements. Trust me it's better to do it right the first time then to get tangled up in costly litigation.</p>
+						<p>Many countries have legal accessibility requirements and penalties if you're found to not be following accessibility requirements. In the United States federal agencies and often those receiving federal grants are required to adhere to <a href="https://www.section508.gov/">Section 508</a> standards. Other businesses in the United States such as local governments and those open to the public must adhere to the <a href="https://www.ada.gov/">Americans with Disabilities Act</a> (ADA)</p>
+						
+						</p>I've personally been in conversations with people at WordCamps who were sued for violating accessibility requirements. It's better to do it right the first time then to get tangled up in costly litigation.</p>
 						
 						<h3>Everyone benefits from accessibility.</h3>
 
@@ -95,7 +97,7 @@
 					<aside class="notes">
 						<p>Accessibility first development is a shift in the way you approach your thinking about the development process. Choosing to create blocks, plugins, and themes that are as accessible as possible out of the box.</p>
 						<h3>It's necessary</h3>
-						<p>Accessibility first development embarrassed the idea that accessibility is a necessity. It's not added later or worse ignored altogether if the project deadline is approaching. Prioritizing accessibility takes it from being a baseline standard to a core project requirement.</p>
+						<p>Accessibility first development embraces the idea that accessibility is a necessity. It's not added later or worse ignored altogether if the project deadline is approaching. Prioritizing accessibility takes it from being a baseline standard to a core project requirement.</p>
 						<h3>It's Inclusive</h3>
 						<p>Accessibility first aims to target the users with the most severe disability. This creates a trickle down affect that covers all other users with little to no disabilities.</p>
 						<h3>It's Proactive</h3>
@@ -103,7 +105,7 @@
 					</aside>
 				</section>
 				<section>
-					<h2>If it's not accessible, it's broken!</h2>
+					<h2 class="r-fit-text">If it's not accessible, it's broken!</h2>
 					<aside class="notes">
 						<p>Simply put, If it's not accessible, it's broken!</p>
 						<p>Developers must adopt the mindset that if what they are coding is not accessible it's broken. It should be fixed and tested before being merged into production.</p>
@@ -162,13 +164,13 @@
 						</li>
 					</ul>
 					<aside class="notes">
-						<p>Here are a few resources that are helpful when learning accessibility.</p>
+						<p>Here are a few resources that will help you get started learning accessibility deeply.</p>
 						<h3>WCAG</h3>
 						<p>The Web Content Accessibility Guidelines (WCAG) is the official accessibility documentation. You want to aim for a minimum WCAG 2.1 AA compliance.</p>
 						<h3>MDN</h3>
 						<p>I find the MDN Web Docs to be a help place for developers to find detailed accessible documentation and examples.</p>
 						<h3>Accessibility Checker</h3>
-						<p>I also find myself using our own documentation for the Accessibility Checker plugin (Which I'll touch on later). For each accessible check the plugin performs these is documentation that describes the issue, it's impact on accessibility and how to fix it.</p>
+						<p>I also find myself using our own documentation for the Accessibility Checker plugin (Which I'll touch on later). For each accessible check the plugin performs there is documentation that describes the issue, it's impact on accessibility and how to fix it.</p>
 						<p>These are unofficial docs so alway be sure to cross reference the information found on these docs with the office WCAG guidelines.</p>
 					</aside>
 				</section>
@@ -182,6 +184,11 @@
 				<section>
 					<section>
 						<h2>Automated Testing</h2>
+						<ul>
+							<li>Reduces repetitive tasks</li>
+							<li>Reduces potential for human error</li>
+							<li>Saves time and cost</li>
+						</ul>
 						<aside class="notes">
 							<p>Automation is crucial to an accessibility first development workflow. It reduces repetitive tasks, and the potential for human error. Testing can quickly identify accessibility issues and provide full site reports, saving time and cost.</p>
 						</aside>
@@ -193,6 +200,20 @@
 							<img class="img-style" data-src="images/edac-screenshot-01.png" alt="Accessibility Checker WordPress plugin summary screen">
 							<img class="fragment img-style" data-src="images/edac-screenshot-02.png" alt="Accessibility Checker WordPress plugin details screen">
 						</div>
+						<aside class="notes">
+
+							<ul>
+								<li>Accessibility error and warning notifications right on your post and/or page edit screen.</li>
+								<li>40 different accessibility checks</li>
+								<li>No limits on pages scanned</li>
+								<li>Readability analysis (Flesch Kincaid grade level)</li>
+								<li>Ignore feature</li>
+								<li>All data store on your server</li>
+								<li>An more...</li>
+							</ul>
+							<p>This is a screenshot of the Accessibility Checker plugin running in the WordPress admin edit screen of a post. The Accessibility Checker has three tabs; Summary, Details, and Readability with Summary being the current tab. To the left is a circle progress bar showing 83% passed tests. To the right are four squares showing 17 errors, 5 contrast errors, 6 warnings, and 0 ignored items. In the bottom it shows a reading level of 12th grade.</p>
+							<p>This screenshot is the same as the previous but with the details tab as the current tab. It shows a list of accessibility issues first by errors, then warnings, and finally passed checks.</p>
+						</aside>
 					</section>
 					<section>
 						<h3>Software as a Service (Saas) Scanning Tools</h3>
@@ -201,6 +222,9 @@
 							<li><a href="https://pope.tech/" >Pope Tech</a> (WAVE API)</li>
 							<li><a href="https://www.siteimprove.com/">Siteimprove</a></li>
 						</ul>
+						<aside class="notes">
+							<p>Saas scanning tools such as Monsido, Pope Tech, and Siteimprove all run from an external server. These are typically premium services that will scan a whole website or from a defined sitemap. They may have time delays or limits based on different plan levels. Detail reporting and management tools are also provided.</p>
+						</aside>
 					</section>
 					<section>
 						<h3>Automated Doesn't Equal Accessible</h3>
@@ -212,11 +236,16 @@
 				<section>
 					<section>
 						<h2>Browser Extensions</h2>
+						<ul>
+							<li>Directly within the browser</li>
+							<li>Typically private and secure</li>
+							<li>Evaluates the rendered page</li>
+						</ul>
 						<aside class="notes">
 							<ul>
-								<li>Allow you to evaluate web content for accessibility issues directly within your browser.</li>
+								<li>Allows you to evaluate web content for accessibility issues directly within your browser.</li>
 								<li>Typically private and secure</li>
-								<li>Evaluates the rendered page</li>
+								<li>Evaluates the fully rendered page</li>
 								<li>Support most Chromium browsers and/or FireFox</li>
 							</ul>
 						</aside>
@@ -225,13 +254,16 @@
 						<h3>WAVE</h3>
 						<img class="img-style" data-src="images/wave.png" alt="weather.com with wave browser extension overlay">
 						<aside class="notes">
+							<p>In this screenshot is the WAVE Chrome extension overlayed on the weather.com website. On left side of the page there is a list of WAVE accessibility errors and alerts.</p>
+							<p>WAVE is a web accessibility evaluation tool developed by WebAIM.org. It provides visual feedback about the accessibility of your website by injecting icons and indicators into your page.</p>
 						</aside>
 					</section>
 					<section>
 						<h3>axe DevTools - Web Accessibility Testing</h3>
 						<img class="img-style" data-src="images/axe.png" alt="weather.com with axe dev tools browser extension">
 						<aside class="notes">
-							<p><a href="https://www.deque.com/axe/devtools/">axe DevTools</a> uses axe-core, developed by Deque.</p>
+							<p>In this screenshot the axe DevTools Chrome extension is open in the developer tools panel. The panel shows the total number of issues with details below.</p>
+							<p><a href="https://www.deque.com/axe/devtools/">axe DevTools</a>Uses axe-core, developed by Deque.</p>
 							<p>Runs in the Chrome Dev Tools</p>
 						</aside>
 					</section>
@@ -239,6 +271,7 @@
 						<h3>IBM Equal Access Accessibility Checker</h3>
 						<img class="img-style" data-src="images/ibm.png" alt="weather.com with ibm equal access accessibility checker browser extension">
 						<aside class="notes">
+							<p>In this screenshot the IBM Equal Access Accessibility Checker Chrome extension is open in the developer tools panel. The panel is split in two columns with a list of issues in the first column and scan summary stats in the second column.</p>
 							<p>The IBM Equal Access Accessibility Checker is an open source tool that utilizes IBM's accessibility rule engine.</p>
 							<p>Also runs in the Chrome Dev Tools</p>
 						</aside>
@@ -247,7 +280,8 @@
 						<h3>HeadingMap</h3>
 						<img class="img-style" data-src="images/headings-map.png" alt="gizmodo.com and yahoo.com with the headings map browser extension">
 						<aside class="notes">
-							<p>Generates an index of all the headings on a page.</p>
+							<p>In this screenshot is two browser windows. In the first window is the HeadingMap Chrome extension for the website gizmodo.com. Headings are out of order for this website. In the second window is the HeadingMap for the website yahoo.com. Headings are in order for this website.</p>
+							<p>HeadingMap generates an index of all the headings on a page. It provides a quick way to identify out of order headings.</p>
 							<p>Heading order is good for accessibility and SEO.</p>
 							<p>Clicking on a heading takes you to it's location on the page.</p>
 						</aside>
@@ -261,8 +295,9 @@
 						Checks React (.js .jsx .ts .tsx), Vue (.vue), Angular (.component.html), HTML (.html .htm), and Markdown (.md .markdown)
 					</small>
 					<aside class="notes">
+						<p>This is a screenshot from Visual Studio Code running the axe Accessibility Linter plugin. In the code editor you can see one line of code for a button that is missing text. Below the line of code is the axe-linter error with text that reads, "axe-linter (button-name): Ensures buttons have discernible text".</p>
 						<p>Also uses, Deque axe-core.</p>
-						<p>PHP currently doesn't have a good up-to-date linter or code sniffer</p>
+						<p>PHP currently doesn't have a good up-to-date linter or code sniffer.</p>
 					</aside>
 				</section>
 				<section>
@@ -273,6 +308,7 @@
 					</ul>
 					<img class="img-style" data-src="images/github-actions.png" alt="GitHub action errors">
 					<aside class="notes">
+						<p>This is a screenshot of a GitHub actions error with text that reads "All checks have failed" Followed by the failures which are axe and unit-tests.</p>
 						<p>GitHub actions can be used to automate accessibility tests with libraries like axe, pally, and lighthouse.</p>
 						<p>These actions can be run on pull requests or update as a stop-gap to ensure accessibility is tested before merging code into production. Any errors would need to resolved before being accepted.</p>
 						<ul>
