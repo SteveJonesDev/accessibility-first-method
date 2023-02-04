@@ -83,7 +83,7 @@
 					</aside>
 				</section>
 				<section>
-					<h2 class="r-fit-text">Fully adopting accessibility first development now ensures an accessible future.</h2>
+					<h2>Fully adopting accessibility first development now ensures an accessible future.</h2>
 					<aside class="notes">
 					</aside>
 				</section>
@@ -160,7 +160,7 @@
 						</li>
 						<li>
 							Equalize Digital Accessibility Checker Documentation (Unofficial)
-							<br /><a href="https://equalizedigital.com/accessibility-checker/documentation/" aria-label="Equalize Digital Accessibility Checker Documentation">https://equalizedigital.com/accessibility-checker/documentation/</a>
+							<br /><small><a href="https://equalizedigital.com/accessibility-checker/documentation/" aria-label="Equalize Digital Accessibility Checker Documentation">https://equalizedigital.com/accessibility-checker/documentation/</a></small>
 						</li>
 					</ul>
 					<aside class="notes">
@@ -170,7 +170,7 @@
 						<h3>MDN</h3>
 						<p>I find the MDN Web Docs to be a help place for developers to find detailed accessible documentation and examples.</p>
 						<h3>Accessibility Checker</h3>
-						<p>I also find myself using our own documentation for the Accessibility Checker plugin (Which I'll touch on later). For each accessible check the plugin performs, there is documentation that describes the issue, its impact on accessibility and how to fix it.</p>
+						<p>The accessiblity checker is a plugin that I development with my partners that is a great resource for documentation. For each accessible check the plugin performs, there is documentation that describes the issue, its impact on accessibility and how to fix it.</p>
 						<p>These are unofficial docs so alway be sure to cross reference the information found on these docs with the office WCAG guidelines.</p>
 					</aside>
 				</section>
@@ -201,9 +201,8 @@
 							<img class="fragment img-style" data-src="images/edac-screenshot-02.png" alt="Accessibility Checker WordPress plugin details screen">
 						</div>
 						<aside class="notes">
-
 							<ul>
-								<li>Accessibility error and warning notifications right on your post and/or page edit screen.</li>
+								<li>Accessibility error and warning notifications right on your post edit screen.</li>
 								<li>40 different accessibility checks</li>
 								<li>No limits on pages scanned</li>
 								<li>Readability analysis (Flesch Kincaid grade level)</li>
@@ -254,36 +253,36 @@
 						<h3>WAVE</h3>
 						<img class="img-style" data-src="images/wave.png" alt="weather.com with wave browser extension overlay">
 						<aside class="notes">
-							<p>In this screenshot is the WAVE Chrome extension overlayed on the weather.com website. On left side of the page there is a list of WAVE accessibility errors and alerts.</p>
 							<p>WAVE is a web accessibility evaluation tool developed by WebAIM.org. It provides visual feedback about the accessibility of your website by injecting icons and indicators into your page.</p>
+							<p>In this screenshot is the WAVE Chrome extension overlayed on the weather.com website. On left side of the page there is a list of WAVE accessibility errors and alerts.</p>
 						</aside>
 					</section>
 					<section>
 						<h3>axe DevTools - Web Accessibility Testing</h3>
 						<img class="img-style" data-src="images/axe.png" alt="weather.com with axe dev tools browser extension">
 						<aside class="notes">
-							<p>In this screenshot the axe DevTools Chrome extension is open in the developer tools panel. The panel shows the total number of issues with details below.</p>
 							<p><a href="https://www.deque.com/axe/devtools/">axe DevTools</a>Uses axe-core, developed by Deque.</p>
 							<p>Runs in the Chrome Dev Tools</p>
+							<p>In this screenshot the axe DevTools Chrome extension is open in the developer tools panel. The panel shows the total number of issues with details below.</p>
 						</aside>
 					</section>
 					<section>
 						<h3>IBM Equal Access Accessibility Checker</h3>
 						<img class="img-style" data-src="images/ibm.png" alt="weather.com with ibm equal access accessibility checker browser extension">
 						<aside class="notes">
-							<p>In this screenshot the IBM Equal Access Accessibility Checker Chrome extension is open in the developer tools panel. The panel is split in two columns with a list of issues in the first column and scan summary stats in the second column.</p>
 							<p>The IBM Equal Access Accessibility Checker is an open source tool that utilizes IBM's accessibility rule engine.</p>
 							<p>Also runs in the Chrome Dev Tools</p>
+							<p>In this screenshot the IBM Equal Access Accessibility Checker Chrome extension is open in the developer tools panel. The panel is split in two columns with a list of issues in the first column and scan summary stats in the second column.</p>
 						</aside>
 					</section>
 					<section>
 						<h3>HeadingMap</h3>
 						<img class="img-style" data-src="images/headings-map.png" alt="gizmodo.com and yahoo.com with the headings map browser extension">
 						<aside class="notes">
-							<p>In this screenshot is two browser windows. In the first window is the HeadingMap Chrome extension for the website gizmodo.com. Headings are out of order for this website. In the second window is the HeadingMap for the website yahoo.com. Headings are in order for this website.</p>
 							<p>HeadingMap generates an index of all the headings on a page. It provides a quick way to identify out of order headings.</p>
 							<p>Heading order is good for accessibility and SEO.</p>
 							<p>Clicking on a heading takes you to it's location on the page.</p>
+							<p>In this screenshot is two browser windows. In the first window is the HeadingMap Chrome extension for the website gizmodo.com. Headings are out of order for this website. In the second window is the HeadingMap for the website yahoo.com. Headings are in order for this website.</p>
 						</aside>
 					</section>
 				</section>
@@ -295,8 +294,8 @@
 						Checks React (.js .jsx .ts .tsx), Vue (.vue), Angular (.component.html), HTML (.html .htm), and Markdown (.md .markdown)
 					</small>
 					<aside class="notes">
-						<p>This is a screenshot from Visual Studio Code running the axe Accessibility Linter plugin. In the code editor you can see one line of code for a button that is missing text. Below the line of code is the axe-linter error with text that reads, "axe-linter (button-name): Ensures buttons have discernible text".</p>
 						<p>Also uses, Deque axe-core.</p>
+						<p>This is a screenshot from Visual Studio Code running the axe Accessibility Linter plugin. In the code editor you can see one line of code for a button that is missing text. Below the line of code is the axe-linter error with text that reads, "axe-linter (button-name): Ensures buttons have discernible text".</p>
 						<p>PHP currently doesn't have a good up-to-date linter or code sniffer.</p>
 					</aside>
 				</section>
@@ -308,8 +307,7 @@
 					</ul>
 					<img class="img-style" data-src="images/github-actions.png" alt="GitHub action errors">
 					<aside class="notes">
-						<p>This is a screenshot of a GitHub actions error with text that reads "All checks have failed" Followed by the failures, which are axe and unit-tests.</p>
-						<p>GitHub actions can be used to automate accessibility tests with code libraries like axe, pally, and lighthouse.</p>
+						<p>GitHub actions can be used to automate accessibility tests with code libraries like axe, pa11y, and lighthouse.</p>
 						<p>These actions can be run on pull requests or update as a stop-gap to ensure accessibility is tested before merging code into production. Any errors would need to resolved before being accepted.</p>
 						<ul>
 							<li>
@@ -322,6 +320,7 @@
 								Lighthouse: by Google is included in the Chrome browser development tools. It can be run from the terminal and generates reports on accessibility.
 							</li>
 						</ul>
+						<p>This is a screenshot of a GitHub actions error with text that reads "All checks have failed" Followed by the failures, which are axe and unit-tests.</p>
 					</aside>
 				</section>
 				<section>
